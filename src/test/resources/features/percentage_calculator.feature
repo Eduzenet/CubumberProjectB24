@@ -1,4 +1,6 @@
 @percent
+  @Smoke
+  @regression
 Feature: Calculate 5% multiple values
 
   Scenario: User calculating 5% values

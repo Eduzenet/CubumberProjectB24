@@ -1,4 +1,6 @@
 @lyft
+@smoke
+@regression
 Feature: Searching Lyft fare details
 
   As a rider , I should be able to enter pickup and drop off locations so that I can see the estimated fare
@@ -10,7 +12,7 @@ Feature: Searching Lyft fare details
     And User clicks on get estimate button
     Then User should see estimated prices
 
-  @smoke
+
   Scenario: Fare estimate using Full address
     Given User is on lyft fare estimate page
     When User enters "7925 Jones Branch Dr, McLean, VA, 22102" to pickup address
@@ -18,7 +20,7 @@ Feature: Searching Lyft fare details
     And User clicks on get estimate button
     Then User should see estimated prices
 
-  @regression
+
   Scenario: Fare estimate using empty should show error
     Given User is on lyft fare estimate page
     When User enters "" to pickup address

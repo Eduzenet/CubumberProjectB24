@@ -1,4 +1,6 @@
 @rerun
+  @Smoke
+  @regression
 Feature: Rerunning failed scenarios
 
   Scenario: one
