@@ -5,10 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class CalculatorPage {
     public CalculatorPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
+
+        // PageFactory.initElements(Driver.getDriver(), this);
+        PageFactory.initElements(new AjaxElementLocatorFactory(Driver.getDriver(), 20), this);
     }
 
     @FindBy(id = "sciOutPut")

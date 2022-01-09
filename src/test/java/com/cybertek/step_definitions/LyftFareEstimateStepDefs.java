@@ -46,7 +46,7 @@ public class LyftFareEstimateStepDefs {
         //fareEstimatePage.getEstimateBtn.click();
         //actions.moveToElement(fareEstimatePage.getEstimateBtn).doubleClick().build().perform();
         fareEstimatePage.getEstimateBtn.click();
-        BrowserUtils.sleep(1);
+        BrowserUtils.sleep(3);
         fareEstimatePage.getEstimateBtn.click();
     }
 
